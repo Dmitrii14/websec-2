@@ -6,5 +6,4 @@ public class Star
     public float X { get; set; } = Random.Next(25, 700);
     public float Y { get; set; } = Random.Next(25, 400);
     public float Size { get; set; } = 16f;
-
 }

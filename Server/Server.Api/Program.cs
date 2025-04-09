@@ -21,6 +21,6 @@ var app = builder.Build();
 
 app.UseCors("CORS");
 
-app.MapHub<GameHub>("/bloodbowl");
+app.MapHub<GameHub>("/starship");
 
 app.Run();

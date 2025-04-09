@@ -1,9 +1,10 @@
 import React from 'react';
+import styles from './ErrorMessage.module.css';
 
 const ErrorMessage = () => {
   return (
     <div>
-      <p>Комната полная. Пожалуйста, подождите или попробуйте позже.</p>
+      <p className={styles.p}>Комната полная</p>
     </div>
   );
 };

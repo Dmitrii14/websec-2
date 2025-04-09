@@ -90,7 +90,7 @@ const GameCanvas = () => {
     star.src = "/star.png";
     setStarImage(star);
     const images = {};
-    for (let i = 1; i <= 6; i++) {
+    for (let i = 1; i <= 10; i++) {
       const img = new Image();
       img.src = `/${i}.png`;
       images[i] = img;
@@ -171,22 +171,22 @@ const GameCanvas = () => {
     }
 
     Object.values(players).forEach((player) => {
-      const car = player.car;
-      const carImage = shipImages[car.color];
-      if (!carImage) return;
+      const ship = player.ship;
+      const shipImage = shipImages[ship.color];
+      if (!shipImage) return;
 
-      const centerX = car.x + 20;
-      const centerY = car.y + 20;
+      const centerX = ship.x + 20;
+      const centerY = ship.y + 20;
 
       ctx.save();
       ctx.translate(centerX, centerY);
-      ctx.rotate(car.angle + Math.PI / 2);
-      ctx.drawImage(carImage, -20, -20, 40, 40);
+      ctx.rotate(ship.angle + Math.PI / 2);
+      ctx.drawImage(shipImage, -20, -20, 40, 40);
       ctx.restore();
 
       ctx.fillStyle = "#363947";
       ctx.font = "16px 'Press Start 2P', cursive";
-      ctx.fillText(player.username, car.x, car.y - 5);
+      ctx.fillText(player.username, ship.x, ship.y - 5);
     });
   }, [players, star, shipImages, starImage]);
 

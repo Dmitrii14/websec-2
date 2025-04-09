@@ -24,3 +24,7 @@ dist-ssr
 *.sw?
 
 /Server/.vs/
+/Server/Server.Api/bin/
+/Server/Server.Api/obj/
+/Server/Server.Domain/bin/
+/Server/Server.Domain/obj/

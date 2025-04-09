@@ -2,6 +2,7 @@
     display: flex;
     gap: 24px;
     align-items: center;
+    justify-content: space-between;
 }
 
 button {
@@ -18,4 +19,9 @@ button {
 
 .leaveButton:hover {
     background-color: #4a5568;
+}
+
+.infoContainer{
+    display: flex;
+    gap: 64px;
 }

@@ -15,7 +15,6 @@ public class Ship
     public float MaxVelocity { get; set; } = 5f; 
     public float Acceleration { get; set; } = 0.2f; 
     public float RotationSpeed { get; set; } = 0.2f; 
-
     public int Color { get; set; } = Random.Next(1, 11);
     public float Hitbox { get; set; } = 36f;
 }

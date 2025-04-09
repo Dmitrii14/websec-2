@@ -43,7 +43,7 @@ public class GameRoom
             await _hubContext.Clients.Client(connectionId).SendAsync("Info", "empty");
         }
 
-        var car = new Ship
+        var ship = new Ship
         {
             Id = connectionId
         };
@@ -52,7 +52,7 @@ public class GameRoom
         {
             Id = connectionId,
             Username = name,
-            Car = car
+            Ship = ship
         };
 
         _service.AddPlayer(player);
@@ -67,7 +67,7 @@ public class GameRoom
     {
         if (!Players.TryGetValue(connectionId, out var player)) return;
 
-        var car = player.Car;
+        var car = player.Ship;
 
         foreach (var direction in directions)
         {
@@ -99,7 +99,7 @@ public class GameRoom
 
         foreach (var player in Players.Values)
         {
-            var car = player.Car;
+            var car = player.Ship;
 
             if (car.Velocity > 0)
                 car.Velocity -= friction;
@@ -115,8 +115,8 @@ public class GameRoom
             car.X += speedX;
             car.Y += speedY;
 
-            player.Car.X = Math.Clamp(player.Car.X, 0, 800);
-            player.Car.Y = Math.Clamp(player.Car.Y, 0, 500);
+            player.Ship.X = Math.Clamp(player.Ship.X, 0, 800);
+            player.Ship.Y = Math.Clamp(player.Ship.Y, 0, 500);
 
 
             if (car.X < Star.X + Star.Size && car.X + car.Hitbox > Star.X - Star.Size &&
@@ -134,38 +134,38 @@ public class GameRoom
             {
                 if (otherPlayer.Id != player.Id)
                 {
-                    if (player.Car.X < otherPlayer.Car.X + otherPlayer.Car.Hitbox && player.Car.X + player.Car.Hitbox > otherPlayer.Car.X &&
-                        player.Car.Y < otherPlayer.Car.Y + otherPlayer.Car.Hitbox && player.Car.Y + player.Car.Hitbox > otherPlayer.Car.Y)
+                    if (player.Ship.X < otherPlayer.Ship.X + otherPlayer.Ship.Hitbox && player.Ship.X + player.Ship.Hitbox > otherPlayer.Ship.X &&
+                        player.Ship.Y < otherPlayer.Ship.Y + otherPlayer.Ship.Hitbox && player.Ship.Y + player.Ship.Hitbox > otherPlayer.Ship.Y)
                     {
-                        float tempVX = player.Car.SpeedX;
-                        float tempVY = player.Car.SpeedY;
+                        float tempVX = player.Ship.SpeedX;
+                        float tempVY = player.Ship.SpeedY;
 
-                        player.Car.SpeedX = otherPlayer.Car.SpeedX;
-                        player.Car.SpeedY = otherPlayer.Car.SpeedY;
+                        player.Ship.SpeedX = otherPlayer.Ship.SpeedX;
+                        player.Ship.SpeedY = otherPlayer.Ship.SpeedY;
 
-                        otherPlayer.Car.SpeedX = tempVX;
-                        otherPlayer.Car.SpeedY = tempVY;
+                        otherPlayer.Ship.SpeedX = tempVX;
+                        otherPlayer.Ship.SpeedY = tempVY;
 
-                        player.Car.X += player.Car.SpeedX;
-                        player.Car.Y += player.Car.SpeedY;
+                        player.Ship.X += player.Ship.SpeedX;
+                        player.Ship.Y += player.Ship.SpeedY;
 
-                        otherPlayer.Car.X += otherPlayer.Car.SpeedX;
-                        otherPlayer.Car.Y += otherPlayer.Car.SpeedY;
+                        otherPlayer.Ship.X += otherPlayer.Ship.SpeedX;
+                        otherPlayer.Ship.Y += otherPlayer.Ship.SpeedY;
 
-                        float overlapX = (player.Car.Hitbox + otherPlayer.Car.Hitbox) / 2 - Math.Abs(player.Car.X - otherPlayer.Car.X);
-                        float overlapY = (player.Car.Hitbox + otherPlayer.Car.Hitbox) / 2 - Math.Abs(player.Car.Y - otherPlayer.Car.Y);
+                        float overlapX = (player.Ship.Hitbox + otherPlayer.Ship.Hitbox) / 2 - Math.Abs(player.Ship.X - otherPlayer.Ship.X);
+                        float overlapY = (player.Ship.Hitbox + otherPlayer.Ship.Hitbox) / 2 - Math.Abs(player.Ship.Y - otherPlayer.Ship.Y);
 
                         if (overlapX > 0 && overlapY > 0)
                         {
                             if (overlapX < overlapY)
                             {
-                                player.Car.X += overlapX / 2 * Math.Sign(player.Car.X - otherPlayer.Car.X);
-                                otherPlayer.Car.X -= overlapX / 2 * Math.Sign(player.Car.X - otherPlayer.Car.X);
+                                player.Ship.X += overlapX / 2 * Math.Sign(player.Ship.X - otherPlayer.Ship.X);
+                                otherPlayer.Ship.X -= overlapX / 2 * Math.Sign(player.Ship.X - otherPlayer.Ship.X);
                             }
                             else
                             {
-                                player.Car.Y += overlapY / 2 * Math.Sign(player.Car.Y - otherPlayer.Car.Y);
-                                otherPlayer.Car.Y -= overlapY / 2 * Math.Sign(player.Car.Y - otherPlayer.Car.Y);
+                                player.Ship.Y += overlapY / 2 * Math.Sign(player.Ship.Y - otherPlayer.Ship.Y);
+                                otherPlayer.Ship.Y -= overlapY / 2 * Math.Sign(player.Ship.Y - otherPlayer.Ship.Y);
                             }
                         }
                     }
