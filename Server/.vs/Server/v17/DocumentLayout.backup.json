@@ -3,8 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\admin\\WebstormProjects\\ZD\\websec-2\\Server\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{83D282CB-0D74-4646-938F-2DBC8E92353A}|Server.Api\\Server.Api.csproj|c:\\users\\admin\\webstormprojects\\zd\\websec-2\\server\\server.api\\game\\gameroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83D282CB-0D74-4646-938F-2DBC8E92353A}|Server.Api\\Server.Api.csproj|solutionrelative:server.api\\game\\gameroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33AE2742-9AAB-4F15-B8C5-B6CC1947D98D}|Server.Domain\\Server.Domain.csproj|c:\\users\\admin\\webstormprojects\\zd\\websec-2\\server\\server.domain\\entities\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33AE2742-9AAB-4F15-B8C5-B6CC1947D98D}|Server.Domain\\Server.Domain.csproj|solutionrelative:server.domain\\entities\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{83D282CB-0D74-4646-938F-2DBC8E92353A}|Server.Api\\Server.Api.csproj|c:\\users\\admin\\webstormprojects\\zd\\websec-2\\server\\server.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83D282CB-0D74-4646-938F-2DBC8E92353A}|Server.Api\\Server.Api.csproj|solutionrelative:server.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83D282CB-0D74-4646-938F-2DBC8E92353A}|Server.Api\\Server.Api.csproj|c:\\users\\admin\\webstormprojects\\zd\\websec-2\\server\\server.api\\game\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83D282CB-0D74-4646-938F-2DBC8E92353A}|Server.Api\\Server.Api.csproj|solutionrelative:server.api\\game\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33AE2742-9AAB-4F15-B8C5-B6CC1947D98D}|Server.Domain\\Server.Domain.csproj|c:\\users\\admin\\webstormprojects\\zd\\websec-2\\server\\server.domain\\repository\\gamerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33AE2742-9AAB-4F15-B8C5-B6CC1947D98D}|Server.Domain\\Server.Domain.csproj|solutionrelative:server.domain\\repository\\gamerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83D282CB-0D74-4646-938F-2DBC8E92353A}|Server.Api\\Server.Api.csproj|c:\\users\\admin\\webstormprojects\\zd\\websec-2\\server\\server.api\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83D282CB-0D74-4646-938F-2DBC8E92353A}|Server.Api\\Server.Api.csproj|solutionrelative:server.api\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33AE2742-9AAB-4F15-B8C5-B6CC1947D98D}|Server.Domain\\Server.Domain.csproj|c:\\users\\admin\\webstormprojects\\zd\\websec-2\\server\\server.domain\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33AE2742-9AAB-4F15-B8C5-B6CC1947D98D}|Server.Domain\\Server.Domain.csproj|solutionrelative:server.domain\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33AE2742-9AAB-4F15-B8C5-B6CC1947D98D}|Server.Domain\\Server.Domain.csproj|c:\\users\\admin\\webstormprojects\\zd\\websec-2\\server\\server.domain\\entities\\star.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33AE2742-9AAB-4F15-B8C5-B6CC1947D98D}|Server.Domain\\Server.Domain.csproj|solutionrelative:server.domain\\entities\\star.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83D282CB-0D74-4646-938F-2DBC8E92353A}|Server.Api\\Server.Api.csproj|c:\\users\\admin\\webstormprojects\\zd\\websec-2\\server\\server.api\\services\\igameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83D282CB-0D74-4646-938F-2DBC8E92353A}|Server.Api\\Server.Api.csproj|solutionrelative:server.api\\services\\igameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33AE2742-9AAB-4F15-B8C5-B6CC1947D98D}|Server.Domain\\Server.Domain.csproj|c:\\users\\admin\\webstormprojects\\zd\\websec-2\\server\\server.domain\\repository\\igamerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33AE2742-9AAB-4F15-B8C5-B6CC1947D98D}|Server.Domain\\Server.Domain.csproj|solutionrelative:server.domain\\repository\\igamerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83D282CB-0D74-4646-938F-2DBC8E92353A}|Server.Api\\Server.Api.csproj|c:\\users\\admin\\webstormprojects\\zd\\websec-2\\server\\server.api\\server.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{83D282CB-0D74-4646-938F-2DBC8E92353A}|Server.Api\\Server.Api.csproj|solutionrelative:server.api\\server.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33AE2742-9AAB-4F15-B8C5-B6CC1947D98D}|Server.Domain\\Server.Domain.csproj|c:\\users\\admin\\webstormprojects\\zd\\websec-2\\server\\server.domain\\server.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{33AE2742-9AAB-4F15-B8C5-B6CC1947D98D}|Server.Domain\\Server.Domain.csproj|solutionrelative:server.domain\\server.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +67,157 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GameRoom.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\WebstormProjects\\ZD\\websec-2\\Server\\Server.Api\\Game\\GameRoom.cs",
+              "RelativeDocumentMoniker": "Server.Api\\Game\\GameRoom.cs",
+              "ToolTip": "C:\\Users\\admin\\WebstormProjects\\ZD\\websec-2\\Server\\Server.Api\\Game\\GameRoom.cs",
+              "RelativeToolTip": "Server.Api\\Game\\GameRoom.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAAwHQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T20:14:39.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameHub.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\WebstormProjects\\ZD\\websec-2\\Server\\Server.Api\\Game\\GameHub.cs",
+              "RelativeDocumentMoniker": "Server.Api\\Game\\GameHub.cs",
+              "ToolTip": "C:\\Users\\admin\\WebstormProjects\\ZD\\websec-2\\Server\\Server.Api\\Game\\GameHub.cs",
+              "RelativeToolTip": "Server.Api\\Game\\GameHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T20:14:27.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GameService.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\WebstormProjects\\ZD\\websec-2\\Server\\Server.Api\\Services\\GameService.cs",
+              "RelativeDocumentMoniker": "Server.Api\\Services\\GameService.cs",
+              "ToolTip": "C:\\Users\\admin\\WebstormProjects\\ZD\\websec-2\\Server\\Server.Api\\Services\\GameService.cs",
+              "RelativeToolTip": "Server.Api\\Services\\GameService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T20:10:35.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IGameService.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\WebstormProjects\\ZD\\websec-2\\Server\\Server.Api\\Services\\IGameService.cs",
+              "RelativeDocumentMoniker": "Server.Api\\Services\\IGameService.cs",
+              "ToolTip": "C:\\Users\\admin\\WebstormProjects\\ZD\\websec-2\\Server\\Server.Api\\Services\\IGameService.cs",
+              "RelativeToolTip": "Server.Api\\Services\\IGameService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T20:05:18.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Server.Api",
+              "DocumentMoniker": "C:\\Users\\admin\\WebstormProjects\\ZD\\websec-2\\Server\\Server.Api\\Server.Api.csproj",
+              "RelativeDocumentMoniker": "Server.Api\\Server.Api.csproj",
+              "ToolTip": "C:\\Users\\admin\\WebstormProjects\\ZD\\websec-2\\Server\\Server.Api\\Server.Api.csproj",
+              "RelativeToolTip": "Server.Api\\Server.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-08T19:35:47.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GameRepository.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\WebstormProjects\\ZD\\websec-2\\Server\\Server.Domain\\Repository\\GameRepository.cs",
+              "RelativeDocumentMoniker": "Server.Domain\\Repository\\GameRepository.cs",
+              "ToolTip": "C:\\Users\\admin\\WebstormProjects\\ZD\\websec-2\\Server\\Server.Domain\\Repository\\GameRepository.cs",
+              "RelativeToolTip": "Server.Domain\\Repository\\GameRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T19:21:06.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IGameRepository.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\WebstormProjects\\ZD\\websec-2\\Server\\Server.Domain\\Repository\\IGameRepository.cs",
+              "RelativeDocumentMoniker": "Server.Domain\\Repository\\IGameRepository.cs",
+              "ToolTip": "C:\\Users\\admin\\WebstormProjects\\ZD\\websec-2\\Server\\Server.Domain\\Repository\\IGameRepository.cs",
+              "RelativeToolTip": "Server.Domain\\Repository\\IGameRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T19:11:52.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Star.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\WebstormProjects\\ZD\\websec-2\\Server\\Server.Domain\\Entities\\Star.cs",
+              "RelativeDocumentMoniker": "Server.Domain\\Entities\\Star.cs",
+              "ToolTip": "C:\\Users\\admin\\WebstormProjects\\ZD\\websec-2\\Server\\Server.Domain\\Entities\\Star.cs",
+              "RelativeToolTip": "Server.Domain\\Entities\\Star.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T19:09:20.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\WebstormProjects\\ZD\\websec-2\\Server\\Server.Domain\\Entities\\Player.cs",
+              "RelativeDocumentMoniker": "Server.Domain\\Entities\\Player.cs",
+              "ToolTip": "C:\\Users\\admin\\WebstormProjects\\ZD\\websec-2\\Server\\Server.Domain\\Entities\\Player.cs",
+              "RelativeToolTip": "Server.Domain\\Entities\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T19:07:32.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\WebstormProjects\\ZD\\websec-2\\Server\\Server.Domain\\Entities\\Car.cs",
+              "RelativeDocumentMoniker": "Server.Domain\\Entities\\Car.cs",
+              "ToolTip": "C:\\Users\\admin\\WebstormProjects\\ZD\\websec-2\\Server\\Server.Domain\\Entities\\Car.cs",
+              "RelativeToolTip": "Server.Domain\\Entities\\Car.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T19:06:23.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\admin\\WebstormProjects\\ZD\\websec-2\\Server\\Server.Api\\Program.cs",
               "RelativeDocumentMoniker": "Server.Api\\Program.cs",
               "ToolTip": "C:\\Users\\admin\\WebstormProjects\\ZD\\websec-2\\Server\\Server.Api\\Program.cs",
               "RelativeToolTip": "Server.Api\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T18:37:22.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Server.Domain",
+              "DocumentMoniker": "C:\\Users\\admin\\WebstormProjects\\ZD\\websec-2\\Server\\Server.Domain\\Server.Domain.csproj",
+              "RelativeDocumentMoniker": "Server.Domain\\Server.Domain.csproj",
+              "ToolTip": "C:\\Users\\admin\\WebstormProjects\\ZD\\websec-2\\Server\\Server.Domain\\Server.Domain.csproj",
+              "RelativeToolTip": "Server.Domain\\Server.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-08T19:35:38.63Z",
               "EditorCaption": ""
             }
           ]
