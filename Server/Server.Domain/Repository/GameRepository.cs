@@ -8,16 +8,12 @@ public class GameRepository:IGameRepository<Player>
 
     public List<Player> GetAll() => _players;
 
-    public Player? GetById(string id) => GetAll().FirstOrDefault(p => p.Id == id);
+    public Player? GetByIdAndUsername(string id, string username) =>
+        GetAll().FirstOrDefault(p => p.Id == id && p.Username == username);
+
 
     public void Add(Player p)
     {
-        var player = GetById(p.Id);
-        if (player != null)
-        {
-            player.Username = p.Username;
-            return;
-        }
         _players.Add(p);
     }
 
@@ -26,18 +22,18 @@ public class GameRepository:IGameRepository<Player>
         return [.. GetAll().OrderByDescending(p => p.Rating).Take(10)];
     }
 
-    public void IncrementRating(string id)
+    public void IncrementRating(string id, string username)
     {
-        var player = GetById(id);
+        var player = GetByIdAndUsername(id, username);
         if (player != null)
         {
             player.Rating += 1;
         }
     }
 
-    public int GetRatingById(string id)
+    public int GetRatingById(string id, string username)
     {
-        var player = GetById(id);
+        var player = GetByIdAndUsername(id, username);
         if (player != null)
         {
             return player.Rating;

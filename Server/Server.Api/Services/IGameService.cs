@@ -7,6 +7,6 @@ public interface IGameService<TEntity>
     public List<TEntity> GetPlayers();
     public void AddPlayer(TEntity entity);
     public List<Player> GetTopPlayers();
-    public void IncrementRating(string id);
-    public int GetRatingById(string id);
+    public void IncrementRating(string id, string username);
+    public int GetRatingById(string id, string username);
 }

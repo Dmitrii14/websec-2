@@ -8,6 +8,6 @@ public class GameService(IGameRepository<Player> repository) : IGameService<Play
     public List<Player> GetPlayers() => repository.GetAll();
     public void AddPlayer(Player player) => repository.Add(player);
     public List<Player> GetTopPlayers() => repository.GetTopPlayers();
-    public void IncrementRating(string id) => repository.IncrementRating(id);
-    public int GetRatingById(string id) => repository.GetRatingById(id);
+    public void IncrementRating(string id, string username) => repository.IncrementRating(id, username);
+    public int GetRatingById(string id, string username) => repository.GetRatingById(id, username);
 }

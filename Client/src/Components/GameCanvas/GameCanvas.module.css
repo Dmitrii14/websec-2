@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.field{
+    border-radius: 8px;
+    background-color: #a1b9d1;
+    border: 4px solid #363947;
+}
+
+.mainContainer{
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.inputContainer{
+    margin-top: 24px;
+    padding: 16px;
+}
+
+.listTopPlayersContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-grow: 1;
+}

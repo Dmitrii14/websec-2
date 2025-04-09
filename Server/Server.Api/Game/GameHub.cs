@@ -1,18 +1,22 @@
 ﻿using Microsoft.AspNetCore.SignalR;
+using Microsoft.Extensions.Logging;
 
 namespace Server.Api.Game;
 
-public class GameHub(GameRoom gameRoom) : Hub
+public class GameHub(GameRoom gameRoom, ILogger<GameHub> logger) : Hub
 {
+    private readonly GameRoom _gameRoom = gameRoom;
+    private readonly ILogger<GameHub> _logger = logger;
+
     public async Task RegisterPlayer(string name)
     {
         try
         {
-            await gameRoom.RegisterPlayer(Context.ConnectionId, name);
+            await _gameRoom.RegisterPlayer(Context.ConnectionId, name);
         }
         catch (Exception ex)
         {
-            Console.Error.WriteLine($"Ошибка в RegisterPlayer: {ex}");
+            _logger.LogError(ex, "Ошибка при регистрации игрока: {Name}", name);
             throw;
         }
     }
@@ -21,11 +25,11 @@ public class GameHub(GameRoom gameRoom) : Hub
     {
         try
         {
-            await gameRoom.CheckGame();
+            await _gameRoom.CheckGame();
         }
         catch (Exception ex)
         {
-            Console.Error.WriteLine($"Ошибка в CheckGame: {ex}");
+            _logger.LogError(ex, "Ошибка при CheckGame");
             throw;
         }
     }
@@ -34,11 +38,11 @@ public class GameHub(GameRoom gameRoom) : Hub
     {
         try
         {
-            gameRoom.MovePlayer(Context.ConnectionId, directions);
+            _gameRoom.MovePlayer(Context.ConnectionId, directions);
         }
         catch (Exception ex)
         {
-            Console.Error.WriteLine($"Ошибка в Move: {ex}");
+            _logger.LogError(ex, "Ошибка при Move игрока с ID: {ConnectionId}", Context.ConnectionId);
             throw;
         }
     }
@@ -47,12 +51,12 @@ public class GameHub(GameRoom gameRoom) : Hub
     {
         try
         {
-            await gameRoom.RemovePlayer(Context.ConnectionId);
+            await _gameRoom.RemovePlayer(Context.ConnectionId);
             await base.OnDisconnectedAsync(exception);
         }
         catch (Exception ex)
         {
-            Console.Error.WriteLine($"Ошибка в OnDisconnectedAsync: {ex}");
+            _logger.LogError(ex, "Ошибка при отключении игрока с ID: {ConnectionId}", Context.ConnectionId);
             throw;
         }
     }
@@ -61,11 +65,11 @@ public class GameHub(GameRoom gameRoom) : Hub
     {
         try
         {
-            await gameRoom.RemovePlayer(Context.ConnectionId);
+            await _gameRoom.RemovePlayer(Context.ConnectionId);
         }
         catch (Exception ex)
         {
-            Console.Error.WriteLine($"Ошибка в LeaveGame: {ex}");
+            _logger.LogError(ex, "Ошибка при выходе игрока с ID: {ConnectionId}", Context.ConnectionId);
             throw;
         }
     }

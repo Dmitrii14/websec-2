@@ -43,7 +43,7 @@ public class GameRoom
             await _hubContext.Clients.Client(connectionId).SendAsync("Info", "empty");
         }
 
-        var car = new Car
+        var car = new Ship
         {
             Id = connectionId
         };
@@ -54,12 +54,14 @@ public class GameRoom
             Username = name,
             Car = car
         };
+
         _service.AddPlayer(player);
         Players[connectionId] = player;
-        await _hubContext.Clients.Client(player.Id).SendAsync("ReceiveStars", _service.GetRatingById(player.Id));
+
         var topPlayers = _service.GetTopPlayers();
         await _hubContext.Clients.All.SendAsync("TopPlayers", topPlayers);
     }
+
 
     public void MovePlayer(string connectionId, List<string> directions)
     {
@@ -93,7 +95,7 @@ public class GameRoom
 
     public async Task UpdateGame()
     {
-        float friction = 0.02f;
+        float friction = 0.01f;
 
         foreach (var player in Players.Values)
         {
@@ -113,8 +115,8 @@ public class GameRoom
             car.X += speedX;
             car.Y += speedY;
 
-            player.Car.X = Math.Clamp(player.Car.X, 0, 600);
-            player.Car.Y = Math.Clamp(player.Car.Y, 0, 600);
+            player.Car.X = Math.Clamp(player.Car.X, 0, 800);
+            player.Car.Y = Math.Clamp(player.Car.Y, 0, 500);
 
 
             if (car.X < Star.X + Star.Size && car.X + car.Hitbox > Star.X - Star.Size &&
@@ -122,8 +124,8 @@ public class GameRoom
             {
                 Star = new Star();
                 await _hubContext.Clients.All.SendAsync("StarCollected", Star);
-                _service.IncrementRating(player.Id);
-                await _hubContext.Clients.Client(player.Id).SendAsync("ReceiveStars", _service.GetRatingById(player.Id));
+                _service.IncrementRating(player.Id, player.Username);
+                await _hubContext.Clients.Client(player.Id).SendAsync("ReceiveStars", _service.GetRatingById(player.Id, player.Username));
                 await _hubContext.Clients.All.SendAsync("TopPlayers", _service.GetTopPlayers());
             }
         
@@ -170,7 +172,6 @@ public class GameRoom
                 }
             }
         }
-
         await _hubContext.Clients.All.SendAsync("GameState", Players.Values);
     }
 
